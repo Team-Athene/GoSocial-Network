@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gosocial"
+    }
+  },
+  "defaultProject": "gosocial",
+  "cli": {
+    "analytics": "f340bf3a-9fa0-4b6c-89a1-6352af3f2bfc"
+  }
 }
