@@ -50,15 +50,12 @@
 
 .button {
   display: inline-block;
-  cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   z-index: 199;
 
   position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   background-color: #f1f1f1;
   color: black;
   font-size: 16px;
