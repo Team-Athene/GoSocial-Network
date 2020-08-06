@@ -1,25 +1,21 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { TimelineComponent } from './components/timeline/timeline.component';
+import { NgModule } from '@angular/core'
+import { Routes, RouterModule } from '@angular/router'
+import { HomeComponent } from './Components/home/home.component'
+import { UserComponent } from './Components/user/user.component'
+import { UserGuard } from './Guards/User/user.guard'
 
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginComponent
+    component: HomeComponent
   },
   {
-    path: 'register',
-    component: RegisterComponent
-  },
-  {
-    path: 'timeline',
-    component: TimelineComponent
+    path: 'User',
+    component: UserComponent,
+    canActivate: [UserGuard]
   }
-];
-
+]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
