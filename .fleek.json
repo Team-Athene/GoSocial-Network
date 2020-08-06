@@ -3,7 +3,7 @@
     "image": "node:alpine",
     "command": "npm install && npm run build",
     "publicDir": "build",
-    "baseDir": "fms",
+    "baseDir": "",
     "environment": {
       "SOME_ENV": "Build finished!"
     }
